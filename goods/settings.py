@@ -30,7 +30,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['products-buyers.onrender.com/', 'localhost', '127.0.0.1',  'myapp.local' ]
+ALLOWED_HOSTS = ['products-buyers.onrender.com', 'localhost', '127.0.0.1',  'myapp.local' ]
 
 
 # Application definition
