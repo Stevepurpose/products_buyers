@@ -1,0 +1,12 @@
+{% extends "master.html" %}
+{%block title%} 
+list  Buyer Details
+{%endblock%}
+{%block content%}
+    <h1>Buyer Details</h1>
+    <h1>Name: {{myBuyer.buyername}}</h1>
+    <p>Product number: {{myBuyer.units}}</p>
+    <P>Price: {{myBuyer.location}}</P>
+    <p>Click to go back<a href="/products/buyers">Buyers</a> </p>
+{% endblock %}
+</html>

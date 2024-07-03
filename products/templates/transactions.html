@@ -1,0 +1,26 @@
+{% extends "master.html" %}
+
+{%block title%}{%endblock%}
+
+{%block content%}
+    <h1>Products</h1>
+
+<table border="1">
+<thead>
+    <tr>
+        <th>Product Name</th>
+        <th>Product Number</th>
+    </tr>
+</thead>
+<tbody>
+    {%for product in products%}
+    <tr>
+        <td><a href="prodetails/{{product.productID}}">{{product.productname}} </a></td>
+        <td>{{product.productNumber}}</td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+<p><a href="/">Home</a></p>
+{% endblock %}
+

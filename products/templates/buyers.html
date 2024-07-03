@@ -1,0 +1,26 @@
+{% extends "master.html" %}
+{%block title%} 
+list  Buyers
+{%endblock%}
+
+{%block content%}
+    <h1>Buyers</h1>
+<table border="1">
+<thead>
+<tr>
+    <th>Buyer Name</th>
+    <th>Location</th>
+</tr>
+</thead>
+<tbody>
+{%for buyer in buyers%}
+    <tr>
+        <td><a href="buyerdetails/{{buyer.id}}">{{buyer.buyername}}</a> </td>
+        <td>{{buyer.location}}</td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+ 
+    <p>Click to go back<a href="/products">Products</a> </p>
+{%endblock%}

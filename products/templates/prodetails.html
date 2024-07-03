@@ -1,0 +1,14 @@
+{% extends "master.html" %}
+{%block title%} 
+list  Product Details
+{%endblock%}
+
+{%block content%}
+    <h1>Product Details</h1>
+    <h1>{{myProduct.productname}}</h1>
+    <p>Product number: {{myProduct.productNumber}}</p>
+    <P>Price: {{myProduct.price}}</P>
+    <p>Manu Date: {{myProduct.production_date}}</p>
+    <p>Exp Date: {{myProduct.expiry_date}}</p>
+    <p>Click to go back<a href="/products">Products</a> </p>
+{% endblock %}
